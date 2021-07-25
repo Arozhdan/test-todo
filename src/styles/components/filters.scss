@@ -1,0 +1,15 @@
+.filters {
+  background-color: $white;
+  padding: 10px 32px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  .h3 {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+}

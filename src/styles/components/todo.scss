@@ -1,0 +1,73 @@
+.todo {
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  &__title {
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    color: $white;
+    letter-spacing: 0.3em;
+    position: relative;
+    background-color: transparent;
+    border: none;
+  }
+  &__create {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 32px;
+  }
+  &__create__input {
+    display: block;
+    flex-grow: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &__create__input input {
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+  &__item {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+  }
+  &__item + &__item {
+    margin-top: 16px;
+  }
+  &__item--high {
+    border-left: 3px solid $red;
+  }
+  &__item--medium {
+    border-left: 3px solid $yellow;
+  }
+  &__item--low {
+    border-left: 3px solid $green;
+  }
+  &__item__body {
+    flex-grow: 1;
+    padding: 16px;
+  }
+  &__item__body input {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  &__item__body input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+  &__item__controls button {
+    background-color: $white;
+    border: none;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+  }
+}
